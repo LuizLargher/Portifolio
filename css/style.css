@@ -1,17 +1,97 @@
+/*Estilização Geral*/
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: lightgray;
-    width: 50%dvh;
-}
-header {
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategrey;
-    & img {
-        width: 20%;
-        border-radius: 50%;
+    background-image:url(roxo-degrade.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  
+}
+.clear {
+    clear: both;
+}
+/*Cabeçalho*/
+header {
+    color: aliceblue;
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & nav {
+        background-color: rgba(125, 23, 198, 0.796);
+        border-radius: 25px;
+        width: 80%;
+        height: 50px;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        & .contatos {
+            & .email{
+                float: left;
+                & span {
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                    
+
+                }
+                & i {
+                    color: rgb(0, 254, 21);
+                    font-size: 28px;
+                    margin: 5px;
+                    padding: 10px 0px 0px 10px;
+                }
+            }
+            & a {
+                text-decoration: none;
+                float: right;
+                & i {
+                    color: rgb(15, 255, 7);
+                    font-size: 32px;
+                    margin: 5px;
+                    padding: 7px 10px 10px 0px;
+                }
+            }
+        }
+
+        & .contatos a:hover{
+            & i {
+                color: rgb(223, 195, 255);
+                transition: ease;
+                transform: scale(1.2,1.2);
+                font-size: 32px;
+                margin: 5px;
+                padding: 5px 10px 20px 0px;
+            }
+        }
+    }
+}
+/*Seção 1 - Sobre*/
+.sobre {
+    background: linear-gradient(90deg,rgb(48, 9, 90) 0%, rgb(89, 2, 160) 50%, rgb(38, 1, 57) 100%);
+    border-radius: 25px;
+    width: 100%;
+    & .intro{
+        & .foto {
+            width: 30%;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid rgb(16, 211, 2);
+            border-radius: 50%;
+        }
     }
 }
